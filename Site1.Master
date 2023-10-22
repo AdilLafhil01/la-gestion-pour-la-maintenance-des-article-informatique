@@ -1,0 +1,168 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="la_maintenance_des_articles_informatique.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      
+    <%--<img src="~/image/masterlab.jpg" alt="Ma belle image" class="auto-style1" />--%>
+    
+    
+    
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la maintenance des articles informatique</title>
+
+    <link rel="stylesheet" href="StyleSheet1.css">
+
+   
+    
+
+    <style type="text/css">
+        .auto-style1 {
+            display: inline-block;
+            margin-right: 20px;
+            width: 189px;
+            height: 33px;
+        }
+        .auto-style2 {
+            display: inline-block;
+            margin-right: 20px;
+            width: 193px;
+            height: 33px;
+        }
+    </style>
+
+   
+    
+
+</head>
+
+    <body id="home" class="homepage">
+
+    <%--<header id="header">
+      
+    </header>--%>
+
+
+    <header class="header">
+        <div class="container">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/image/masterlab.jpg" AlternateText="Ma belle image" Height="434px" Width="1211px" CssClass="auto-style12" style="margin-left: 30px" />
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="HOMEaspx.aspx" class="auto-style1"><strong style="text-decoration: none; font-size: larger">HOME</strong></a></li>
+                    <li class="nav-item"><a href="utilisateur.aspx" class="auto-style1"><strong style="text-decoration: none; font-size: larger">UTILISATEUR</strong></a></li>
+                    <li class="nav-item"><a href="Client.aspx" class="auto-style1"><strong style="text-decoration: none; font-size: larger">CLIENT</strong></a></li>
+                    <li class="nav-item"><a href="Article.aspx" class="auto-style1"><strong style="text-decoration: none; font-size: larger">ARTICLE</strong></a></li>
+                    <li class="nav-item"><a href="intervention.aspx" class="auto-style1"><strong style="text-decoration: none; font-size: larger">INTERVENTION</strong></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="container">
+            <main class="main">
+                <section id="">
+    <asp:ContentPlaceHolder ID="Article" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+
+   <section id="">
+    <asp:ContentPlaceHolder ID="utilisateur" runat="server">
+
+    </asp:ContentPlaceHolder>
+    </section>
+                   <section id="">
+    <asp:ContentPlaceHolder ID="Client" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+                    <section id="">
+    <asp:ContentPlaceHolder ID="intervention" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+         <section id="">
+    <asp:ContentPlaceHolder ID="detail" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+          <section id="">
+    <asp:ContentPlaceHolder ID="filtre" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+          <section id="">
+    <asp:ContentPlaceHolder ID="filtrer" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+        <section id="">
+    <asp:ContentPlaceHolder ID="log" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+        <section id="">
+    <asp:ContentPlaceHolder ID="HOME" runat="server">
+    </asp:ContentPlaceHolder>
+    </section>
+
+        
+
+                <!-- Placeholder pour le contenu spécifique à chaque page -->
+                <div id="ContenuPrincipal" class="page-content">
+                    
+                    <p><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+      
+            </asp:ContentPlaceHolder></p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+          <p>&copy; 2023 MASTERLAB</p>
+        </div>
+    </footer>
+    
+        
+    
+       <%--<form id="form1" runat="server"  >
+           <asp:Panel ID="Panel1" runat="server" Height="51px">
+              
+        <div id="menu"> 
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BorderColor="#993300" BorderStyle="Solid" CssClass="icon">
+                <DynamicMenuStyle Width="75px" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/HOMEaspx.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/utilisateur.aspx" Text="UTILISATEUR" Value="utilisateur"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Client.aspx" Text="CLIENT" Value="Client"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Article.aspx" Text="ARTICLE" Value="Article"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/intervention.aspx" Text="INTERVENTION" Value="intervention"></asp:MenuItem>
+                </Items>
+                <StaticMenuItemStyle BackColor="#0033CC" ForeColor="White" HorizontalPadding="75px" VerticalPadding="10px" />
+            </asp:Menu>
+            
+             
+        </div>
+                   
+           </asp:Panel>
+            
+    </form>--%>
+   
+
+    
+   
+
+    
+     
+ 
+
+   
+   
+   
+       
+      
+      
+</body>
+</html>

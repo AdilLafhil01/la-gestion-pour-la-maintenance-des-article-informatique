@@ -1,0 +1,48 @@
+﻿/* Styles pour le header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+    .header .logo {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+.nav {
+    background-color: #444;
+    margin-top: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+    .nav-item a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        width: 200px; /* Modifiez la largeur selon vos besoins */
+    }
+
+/* Styles pour le contenu principal */
+.page-content {
+    padding: 20px;
+}
+
+/* Styles pour le footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
